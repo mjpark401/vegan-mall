@@ -3,7 +3,7 @@ import "./UserCardBlock.css"
 function UserCardBlock(props) {
 
     const renderCartImage = (images) => {
-        if (images.length > 0) {
+        if(images.length > 0) {
             let image = images[0]
             return `http://localhost:5000/${image}`
         }
@@ -34,14 +34,14 @@ function UserCardBlock(props) {
   return (
     <div>
         <table>
-            <thread>
+            <thead>
                 <tr>
                     <th>Product Image</th>
                     <th>Product Quantity</th>
                     <th>Product Price</th>
                     <th>Remove from Cart</th>
                 </tr>
-            </thread>
+            </thead>
 
             <tbody>
                 {renderItems()}

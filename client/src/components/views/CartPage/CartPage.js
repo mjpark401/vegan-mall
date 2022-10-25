@@ -13,7 +13,7 @@ function CartPage(props) {
         // 상품의 정보를 가져오기 위해서
         // 리덕스 User State 안에 cart 안에 상품이 들어있는지 확인
 
-        if(props.userData && props.user.userData.cart) {
+        if(props.user.userData && props.user.userData.cart) {
             if(props.user.userData.cart.length > 0) {  // 카트 안에하나이상 상품이 들어 있다면
                props.user.userData.cart.forEach(item => {
                     cartItems.push(item.id)
@@ -32,7 +32,7 @@ function CartPage(props) {
       <h1>My Cart</h1>
 
       <div>
-       <UserCardBlock products={props.user.cartDetail} />
+        <UserCardBlock products={props.user.cartDetail && props.user.cartDetail.product} />
        </div>
 
     </div>

@@ -128,7 +128,7 @@ router.get('/products_by_id',(req, res) => {
   }
   // productId 를 이용해서 DB에서 그 상품에 대한 정보를 가져옴
 
-  Product.find({ _id: {$in:productIds } })
+  Product.find({ _id: { $in:productIds } })
     .populate('writer')
     .exec((err, product) => {
         if(err) return res.status(400).send(err)

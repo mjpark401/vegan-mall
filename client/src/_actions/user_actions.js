@@ -50,14 +50,12 @@ export function logoutUser(){
     }
 }
 
-export function addToCart(id){
-
+export function addToCart(id) {
     let body = {
-        productId : id
+        productId: id
     }
-
     const request = axios.post(`${USER_SERVER}/addToCart`, body)
-    .then(response => response.data);
+        .then(response => response.data);
 
     return {
         type: ADD_TO_CART,
@@ -76,7 +74,7 @@ export function getCartItems(cartItems, userCart){
             // Quantity 정보를 넣어 준다
             userCart.forEach(cartItem => {
 
-                response.data.forEach((productDetail, index) => {
+                response.data.product.forEach((productDetail, index) => {
 
                     if(cartItem.id === productDetail._id) {
                         response.data.product[index].quantity = cartItem.quantity
