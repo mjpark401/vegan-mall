@@ -7,11 +7,10 @@ const { TextArea } = Input; // css 프레임워크
 
 //
 const Continents = [
-  {key:1, value:"뷰티"},
-  {key:2, value:"간식류"},
-  {key:3, value:"고기류"},
-  {key:4, value:"음료"},
-  {key:5, value:"생활용품"}
+  {key:1, value:"Cosmetics"},
+  {key:2, value:"Food"},
+  {key:3, value:"Dessert"},
+  {key:4, value:"Necessities"}
 ]
 
 
@@ -88,7 +87,7 @@ function UploadProductPage(props) {
         <TextArea onChange={descriptionChangeHandler} value={Description} />
         <br  />
         <br  />
-        <label>가격($)</label>
+        <label>가격(￦)</label>
         <Input type="number" onChange={priceChangeHandler} value={Price} />
         <br  />
         <br  />

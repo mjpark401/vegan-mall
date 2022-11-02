@@ -1,24 +1,20 @@
 const continents = [
 {
     "_id" : 1,
-    "name" : "뷰티"
+    "name" : "Cosmetics"
 },
 {
     "_id" : 2,
-    "name" : "간식류"
+    "name" : "Food"
 },
 {
     "_id" : 3,
-    "name" : "고기류"
+    "name" : "Dessert"
 },
 {
     "_id" : 4,
-    "name" : "음료"
-},
-{
-    "_id" : 5,
-    "name" : "생활용품"
-},
+    "name" : "Necessities"
+}
 ]
 
 const price = [
