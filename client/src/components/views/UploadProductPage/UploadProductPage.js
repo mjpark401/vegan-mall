@@ -10,7 +10,9 @@ const Continents = [
   {key:1, value:"Cosmetics"},
   {key:2, value:"Food"},
   {key:3, value:"Dessert"},
-  {key:4, value:"Necessities"}
+  {key:4, value:"Necessities"},
+  {key:5, value:"Pet snacks"}
+
 ]
 
 

@@ -14,6 +14,10 @@ const continents = [
 {
     "_id" : 4,
     "name" : "Necessities"
+},
+{
+    "_id" : 5,
+    "name" : "Pet snacks"
 }
 ]
 
